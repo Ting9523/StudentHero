@@ -1,0 +1,12 @@
+{
+    "name": "passionate-programmers/wp-data-access",
+    "description": "WP Data Access dependencies",
+    "license": "GPL-2.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "WPDataAccess\\": "WPDataAccess/",
+            "WPDataProjects\\": "WPDataProjects/",
+            "WPDataRoles\\": "WPDataRoles/"
+        }
+    }
+}

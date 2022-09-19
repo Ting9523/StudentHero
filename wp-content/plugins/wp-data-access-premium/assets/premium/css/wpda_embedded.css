@@ -1,0 +1,9 @@
+table.dataTable.wpda-datatable thead .sorting,
+table.dataTable.wpda-datatable thead .sorting_asc,
+table.dataTable.wpda-datatable thead .sorting_desc {
+    background-image: none !important;
+}
+
+.DataTables_sort_wrapper span {
+    margin: auto;
+}

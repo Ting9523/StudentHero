@@ -1,0 +1,42 @@
+div.wpda-panel div.wpda-panel-selection select {
+    float: right;
+}
+div.wpda-panel div.wpda-panel-container {
+    clear: both;
+}
+
+div.wpda-dbms-container div.ui-tabs-panel {
+    padding: 4px;
+}
+
+table.wpda_dbms_table {
+    margin: 0;
+}
+table.wpda_dbms_table tbody tr th {
+    background-color: transparent;
+    text-align: right;
+}
+table.wpda_dbms_table tbody tr th.wpda-widget-dbms-separator,
+table.wpda_dbms_table tbody tr th.wpda-dbms-link {
+    text-align: left;
+}
+
+table.wpda-widget-dbms {
+    table-layout: fixed;
+    width: 100%;
+    border: none;
+    margin: 0;
+}
+table.wpda-widget-dbms thead tr {
+    display: block;
+}
+table.wpda-widget-dbms thead tr th {
+    background-color: transparent;
+    border: none;
+}
+table.wpda-widget-dbms tbody {
+    display: block;
+    height: 300px;
+    overflow-y: scroll;
+    border-collapse: collapse;
+}

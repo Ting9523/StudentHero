@@ -1,0 +1,98 @@
+.wpda-share-chart {
+    padding: 10px;
+}
+
+.wpda-dashboard-shortcode {
+    padding: 10px 0;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.wpda-dashboard-shortcode-link,
+.wpda_embedcode_clipboard-link {
+    cursor: pointer;
+}
+
+.wpda_shortcode_buttons {
+    padding: 0;
+    text-align: center;
+}
+
+.wpda-dashboard-embedcode {
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.wpda-share-chart textarea {
+    font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+    font-size: 11px;
+    font-weight: normal;
+    width: 420px;
+    height: 90px;
+}
+
+.wpda-share-chart span.fa-copy {
+    font-size: 22px;
+    vertical-align: sub;
+}
+
+div.wpda-dashboard-shortcode code {
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+}
+
+nav.wpda_tab_navigation.nav-tab-wrapper {
+    margin-right: 20px !important;
+}
+nav.wpda_tab_navigation a {
+    cursor: pointer;
+}
+
+#wpda-dashboard-toolbar div i {
+    padding: 0 3px;
+}
+
+.icon_close {
+    margin-left: 8px;
+    cursor: pointer;
+    color: gray;
+    font-size: 110%;
+    padding-top: 4px;
+    width: 14px;
+}
+
+div.wpda-share-dashboard {
+    padding: 10px;
+}
+
+div.wpda-share-dashboard div.wpda-share-dashboard-content {
+    margin-top: 5px;
+}
+
+div.wpda-share-dashboard select {
+    margin-top: 5px;
+    width: 100%;
+    box-sizing: content-box;
+}
+
+a.wpda_share_hyperlink,
+a.wpda_share_hyperlink:active,
+a.wpda_share_hyperlink:focus {
+    font-weight: bold;
+    text-decoration: none;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.wpda-dashboard-help-icon {
+    font-size: 20px;
+    float: right;
+}
+
+.wpda_new_chart_container {
+    margin: 10px 0 20px 0;
+    padding: 0;
+}

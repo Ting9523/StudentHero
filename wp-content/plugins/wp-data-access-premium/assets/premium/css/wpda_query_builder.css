@@ -1,0 +1,517 @@
+.visualComponent {
+    display: grid;
+    grid-template-rows: auto minmax(0,1fr);
+    height: 50vh;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #aaa;
+    position: relative;
+}
+
+.visualComponentButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999999999;
+}
+
+.visualComponentButton button {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+}
+
+.visualTables {
+    height: inherit;
+    overflow: auto;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    display: none;
+    z-index: 9999999999;
+}
+
+.visualQuery {
+    overflow: auto;
+    padding: 5px 15px 10px 5px;
+}
+
+.visualSettings {
+    display: grid;
+    grid-template-columns: auto minmax(0,1fr);
+}
+
+.visualSelection {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.visualFilter {
+    overflow: auto;
+}
+
+.visualTablesHeader {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    line-height: 31px;
+}
+.visualTablesHeader .wpda-widget-close {
+    float: right;
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+.visualTableList {
+    border: none;
+    overflow: hidden;
+}
+
+.visualTableUlist {
+    margin: 0;
+}
+.visualTableUlist li {
+    white-space: nowrap;
+    padding: 5px;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+.visualTableUlist li:hover {
+    cursor: pointer;
+    background-color: #dedede;
+}
+
+table.tableWidget {
+    width: 100%;
+    border-spacing: 0;
+}
+
+table.tableWidget td {
+    padding: 3px;
+}
+
+table.tableWidget td.columnName {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+table.tableWidget td.columnType {
+    font-style: italic;
+}
+
+div.wpda_visual_table_widget {
+    position: absolute;
+    min-width: min-content;
+    min-height: 80px;
+    border-radius: 4px;
+}
+div.wpda_visual_table_widget .ui-dialog-titlebar {
+    font-size: 100%;
+    height: auto;
+}
+div.wpda_visual_table_widget tbody {
+    font-size: 90%;
+}
+
+div.wpda_visual_widget_content div.ui-widget-header {
+    padding: 6px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+div.wpda_visual_widget_content div.ui-widget-header span.icons {
+    float: right;
+}
+
+div.wpda_visual_widget_content div.ui-widget-content {
+    border-top: none;
+    min-width: 250px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+div.wpda_visual_link_popup {
+    height: auto;
+    width: auto;
+    padding: 0;
+    border-radius: 4px !important;
+}
+div.wpda_visual_link_popup .ui-dialog-titlebar {
+    display: none;
+}
+div.wpda_visual_link_popup .ui-widget-content {
+    height: auto;
+    width: auto;
+}
+
+.visualTable {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    overflow: auto;
+    height: inherit;
+}
+
+.visualSelectedColumn td:first-child {
+    text-align: left;
+}
+.visualSelectedColumn td:first-child input[type="checkbox"] {
+    margin-top: -4px;
+}
+.visualSelectedColumn td:last-child {
+    text-align: right;
+}
+.visualSelectedColumn:hover {
+    cursor: pointer;
+}
+
+.visualSvg {
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+svg.visualSvg line,
+svg.visualSvg circle {
+    stroke: black;
+    stroke-width: 1;
+}
+svg.visualSvg line:hover,
+svg.visualSvg circle:hover {
+    -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+    cursor: pointer;
+}
+
+table.visualPopup {
+    padding: 0 !important;
+    border-spacing: 0 !important;
+    cursor: pointer;
+    border: 1px solid #aaa !important;
+    border-radius: 4px !important;
+}
+.selectedRow,
+.visualPopup tr:hover {
+    background-color: #eee;
+}
+table.visualPopup tr:last-child td {
+    border-top: 1px solid #aaa !important;
+}
+table.visualPopup th {
+    padding: 6px;
+    border: none;
+    border-bottom: 1px solid #aaa !important;
+    text-align: left;
+}
+table.visualPopup th span.icons {
+    float: right;
+}
+table.visualPopup td {
+    padding: 3px 6px;
+}
+table.visualPopup td:first-child {
+    text-align: center;
+}
+table.visualPopup td:last-child {
+    text-align: left;
+}
+table.visualPopup label {
+    font-weight: normal;
+}
+table.visualPopup input[type="checkbox"] {
+    margin: 0;
+}
+
+div.visualSelection table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    position: relative;
+}
+
+div.visualSelection table thead tr {
+    height: 30px;
+    background-color: #ddd;
+}
+
+div.visualSelection table th,
+div.visualSelection table td {
+    border: 1px solid #eee;
+}
+
+div.visualSelection table th,
+div.visualSelection table td {
+    text-align: left;
+    padding: 2px 8px;
+}
+div.visualSelection table th {
+    padding: 4px 8px;
+    position: sticky;
+    top: 0;
+    background-color: #ddd;
+}
+div.visualSelection table th:first-child,
+div.visualSelection table td:first-child,
+div.visualSelection table th:nth-child(2),
+div.visualSelection table td:nth-child(2) {
+    width: 15px;
+}
+div.visualSelection table th:first-child:hover,
+div.visualSelection table td:first-child:hover {
+    cursor: pointer;
+}
+div.visualSelection table td.column_alias {
+    padding: 0;
+    white-space: nowrap;
+}
+div.visualSelection table td.column_sort > div {
+    display: grid;
+    grid-template-columns: 26px 60px auto;
+    align-items: center;
+    justify-content: space-between;
+}
+div.visualSelection table td.column_sort input[type="number"],
+div.visualSelection table td.column_group input[type="number"] {
+    border: none;
+    border-radius: 0;
+}
+div.visualSelection table td.column_group > div {
+    display: grid;
+    grid-template-columns: 26px 60px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+div.visualSelection table td.column_alias input[type="text"] {
+    width: 99.5%;
+    border: none;
+    border-radius: 0;
+}
+div.visualSelection table td select {
+    border: none;
+    border-radius: 0;
+}
+div.visualSelection table td select:focus {
+    border-color: unset;
+    box-shadow: unset;
+}
+div.visualSelection table td input[type="checkbox"] {
+    margin: auto;
+}
+
+div.wpda-widget-content {
+    width: max-content;
+}
+
+.ui-icon, .ui-widget-content .ui-icon {
+    background-image: none;
+}
+
+.visualTablesHeader,
+.visualQuery,
+.visualSelection,
+.visualFilter {
+    border: 1px solid #ddd;
+}
+.visualSelection {
+    border-right: 3px solid #aaa;
+}
+.visualQuery {
+    border-bottom: 3px solid #aaa;
+}
+.visualSelection,
+.visualFilter {
+    border-top: 3px solid #aaa;
+}
+.visualFilter {
+    border-left: 3px solid #aaa;
+}
+
+.visualFilterHeader {
+    font-weight: bold;
+    text-align: center;
+    line-height: 31px;
+    background-color: #ddd;
+}
+.visualFilterHeader .wpda_icon {
+    float: right;
+    margin-right: 10px;
+}
+
+.visualOutputContainer,
+.visualOutputContainer ul {
+    padding: 0 !important;
+    background: none;
+    border: none;
+}
+.visualOutputContainer .ui-widget-header {
+    font-weight: normal;
+}
+
+.visualOutputContainer .wpda_query_builder_menubar {
+    margin: -5px 10px 0 0;
+}
+.visualOutputContainer .wpda_query_builder_result {
+    margin-top: 0;
+}
+
+.visualOutputContainer .wpda_query_builder_result {
+    clear: both;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.visualOutputContainer ul.json-dict li {
+    float: unset;
+    margin: 0 0 6px 2em;
+}
+
+.visualOutputContainer ul.json-dict, .visualOutputContainer ol.json-array {
+    padding-left: unset;
+}
+
+.visualFilterButtons {
+    text-align: center;
+    padding: 5px;
+}
+
+.filterGroup {
+    margin: 0;
+    padding: 0;
+}
+.filterOperator {
+    text-align: center;
+}
+.filterOperator > div {
+    margin-bottom: 5px;
+}
+.filterOperator .operator_and,
+.filterOperator .operator_or {
+    display: inline-block;
+    cursor: pointer;
+    margin: 5px 0 0 0;
+}
+.filterOperator .operator_and {
+    border-radius: 3px 0 0 3px;
+}
+.filterOperator .operator_or {
+    border-radius: 0 3px 3px 0;
+}
+.filterConditions {
+    background-color: #efefef;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 5px 5px 0 5px;
+    padding: 4px 3px;
+}
+.filterConditions .filterConditions {
+    margin: 0;
+}
+.filterCondition {
+    display: grid;
+    grid-template-columns: min-content auto auto auto min-content;
+    align-items: flex-end;
+    justify-content: stretch;
+    margin: 1px 0;
+}
+.filterCondition:first-child {
+    margin: 0;
+}
+.filterCondition input,
+.filterCondition select {
+    min-width: 0;
+}
+.filterCondition a {
+    text-align: center;
+}
+.filterCondition .operator_and,
+.filterCondition .operator_or {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0;
+}
+.filterCondition .operator_and {
+    border-radius: 3px 0 0 3px;
+}
+.filterCondition .operator_or {
+    border-radius: 0 3px 3px 0;
+}
+.filterCondition:first-child div:first-child .button-primary,
+.filterCondition:first-child div:first-child .button-secondary {
+    background: unset;
+    color:  unset;
+    border: 1px solid #aaa;
+}
+.filterCondition:first-child div:first-child .button-primary:hover,
+.filterCondition:first-child div:first-child .button-secondary:hover {
+    cursor: default;
+}
+.filterCondition:first-child .filterConditionOperator {
+    opacity: 0.3;
+}
+.filterConditionOperator {
+    white-space: nowrap;
+}
+.filterButtons {
+    margin: 5px 0 0 0;
+    text-align: center;
+}
+.visualFilterContainer > .filterGroup:first-child > .filterOperator {
+    display: none;
+}
+.filterConditions > .filterGroup:first-child > .filterOperator {
+    display: none;
+}
+.filterColumnValue {
+    vertical-align: bottom;
+}
+
+.wpda_menu_drop_down {
+    position: relative;
+}
+.wpda_menu_drop_down_content {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    background-color: white;
+    padding: 0;
+    border: 1px solid #aaa;
+    border-radius: 4px 0 4px 4px;
+    z-index: 999;
+}
+.wpda_menu_drop_down_content a {
+    display: block;
+    text-align: left;
+    padding: 5px 10px;
+    white-space: nowrap;
+    font-size: 100%;
+    text-decoration: none;
+    font-weight: 900;
+}
+.wpda_menu_drop_down_content a:hover {
+    background-color: #efefef;
+}
+.wpda_menu_icon {
+    width: fit-content;
+}
+
+.wpda_extra_column {
+    display: none;
+}
+.selectedRow .wpda_extra_column {
+    display: inline-block;
+}
+span.wpda_extra_column i.fas {
+    font-size: 17px;
+    vertical-align: middle;
+}
+tr.wpda_alias_emp td:first-child span {
+    vertical-align: text-top;
+}

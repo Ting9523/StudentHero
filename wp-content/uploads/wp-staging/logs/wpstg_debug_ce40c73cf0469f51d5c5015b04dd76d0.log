@@ -1,0 +1,15 @@
+[WP STAGING Manual Logging][info][2022-09-08 08:47:27] Starting from a clean state...
+[WP STAGING Manual Logging][info][2022-09-08 08:47:27] Sending request to: https://studenthero.azurewebsites.net/wp-admin/admin-ajax.php?action=wpstg_ajax_test_action&_ajax_nonce=7739621b59
+[WP STAGING Manual Logging][info][2022-09-08 08:47:28] {"headers":[],"body":"","response":{"code":false,"message":false},"cookies":[],"http_response":null}
+[WP STAGING Manual Logging][info][2022-09-08 08:47:28] runAjaxFeatureTest waited 0.0 seconds...
+[WP STAGING Manual Logging][info][2022-09-08 08:47:28] Fetched is equal to: 
+[WP STAGING Manual Logging][info][2022-09-08 08:47:28] Fetched is equal to (get_option): 
+[WP STAGING Manual Logging][info][2022-09-08 08:47:28] runAjaxFeatureTest waited 0.5 seconds...
+[WP STAGING Manual Logging][info][2022-09-08 08:47:28] Running updateAjaxTestOption
+[WP STAGING Manual Logging][info][2022-09-08 08:47:28] Complete updateAjaxTestOption. New value: y
+[WP STAGING Manual Logging][info][2022-09-08 08:47:29] Fetched is equal to: y
+[WP STAGING Manual Logging][info][2022-09-08 08:47:29] Fetched is equal to (get_option): 
+[WP STAGING Manual Logging][info][2022-09-08 08:47:29] runAjaxFeatureTest worked
+[WP STAGING Manual Logging][info][2022-09-08 08:47:29] Running Queue Maintenance.
+[WP STAGING Manual Logging][info][2022-09-08 08:47:29] Removed 0 actions that were last updated before 2022-09-01 08:47:29.
+[WP STAGING Shutdown Function][E_WARNING][2022-09-08 09:15:34] Undefined variable $jobId - File: /home/site/wwwroot/wp-content/plugins/wp-staging/Framework/AnalyticsServiceProvider.php Line: 86 | Is it Fatal Error? No | Is it Thrown by WP STAGING? Yes

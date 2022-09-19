@@ -1,0 +1,11 @@
+table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td.wpda_select:first-child::before,
+table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th.wpda_select:first-child::before {
+    top: 50%;
+    left: 50%;
+    margin-left: -9px;
+    margin-top: -8px;
+}
+
+.wpda_search_icon {
+    vertical-align: middle;
+}

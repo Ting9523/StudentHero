@@ -1,0 +1,32 @@
+table.dataTable.wpda-datatable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before,
+table.dataTable.wpda-datatable.dtr-inline.collapsed>tbody>tr>th.dtr-control:before {
+    margin-top: -8px !important;
+}
+
+div.dtsb-searchBuilder {
+    display: block !important;
+}
+div.dtsb-searchBuilder * {
+    display: inline-block !important;
+}
+div.dtsb-criteria {
+    display: block !important;
+    width: fit-content !important;
+}
+div.dtsb-buttonContainer {
+    display: flex !important;
+    flex-direction: row !important;
+    width: min-content !important;
+}
+div.dtsb-searchBuilder div.dtsb-title,
+div.dtsb-searchBuilder div.dtsb-titleRow {
+    padding-left: 0;
+}
+
+div.dtr-modal div.dtr-modal-display div.dtr-modal-content table.wpda-child-modal {
+    width: 100%;
+}
+div.wpda-modal-footer {
+    text-align: center !important;
+    margin-top: 5px !important;
+}

@@ -1,0 +1,63 @@
+.wpdapro_inline_element {
+    max-width: 100%;
+}
+
+.wpdapro_inline_element_input {
+    max-width: 100%;
+}
+
+select.wpdapro_inline_element_select {
+    width: 100%;
+}
+
+.wpdapro_inline_element_message {
+    position: relative;
+    z-index: 99999999;
+    white-space: nowrap;
+}
+
+.wpdapro_inline_element_message:before {
+    font-family: "dashicons";
+    content: "\f227";
+    vertical-align: bottom;
+}
+
+.wpdapro_inline_element_wrapper {
+    width: 100%;
+}
+
+.wpdapro_inline_element_toolbar {
+    width: 50px;
+    background-color: #dedede;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+    z-index: 99999999;
+    margin-top: 1px;
+    margin-left: 2px;
+    margin-right: 5px;
+    float: left;
+}
+
+.wpdapro_inline_element_toolbar_icon {
+    color: #0073aa;
+}
+
+.wpdapro_inline_element_toolbar_icon:hover {
+    color: black;
+    text-shadow: 2px 2px 4px #fff;
+}
+
+.wpdapro_inline_element_toolbar_icon_save {
+    font-size: 18px;
+    height: 18px;
+    width: 18px;
+    padding: 2px;
+}
+
+.wpdapro_inline_element_toolbar_icon_cancel {
+    font-size: 14px;
+    height: 14px;
+    width: 14px;
+    padding: 4px;
+}
