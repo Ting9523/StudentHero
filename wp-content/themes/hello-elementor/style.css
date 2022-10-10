@@ -410,7 +410,7 @@ button,
   [type="button"]:hover,
   [type="button"]:focus {
     color: #ffffff;
-    background-color: #CC3366;
+    background-color: #04142D;
     text-decoration: none; }
   button:not(:disabled),
   [type="submit"]:not(:disabled),
