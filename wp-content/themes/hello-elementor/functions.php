@@ -230,3 +230,17 @@ function uctheme_redirect_blank_search( $query_variables ) {
 }
 
 add_filter( 'request', 'uctheme_redirect_blank_search' );
+
+function search_placeholder_replace(){
+?>
+<script>
+  (function($){
+      $(document).ready(function(){
+            $("input[type=search]").attr("placeholder","Search for articles and pages by keywords. E.g. workplace");
+        });
+  })(jQuery);
+  </script>
+<?php
+
+}
+add_action('wp_head', 'search_placeholder_replace');
